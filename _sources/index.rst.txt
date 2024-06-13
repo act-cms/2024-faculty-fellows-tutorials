@@ -24,7 +24,7 @@ Accelerating Curricular Transformation in the Computational Molecular Sciences (
    :hidden:
    :titlesonly:
 
-   index
+   self
    faculty_fellows_workshop/index
 
 
