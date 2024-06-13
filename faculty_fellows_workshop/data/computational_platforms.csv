@@ -1,0 +1,5 @@
+,Available Languages,Customizable Environment,Interface/IDE,Supports Collaboration,Pre-installed Libraries,GPU Support?
+ChemCompute,Python; Julia,No,Jupyter notebook/lab,No,SciPy stack; many compchem packages,Yes
+Google CoLab,Python,Yes,Jupyter notebook,Yes,SciPy stack.,Yes
+GitHub Codespaces,Any if configured correctly,Yes,Visual Studio Code or Jupyter (Any web interface if you can set it up),Yes,"Can choose Anaconda base (SciPy stack), many other base environments, or create your own.",Yes (costs money)
+nanoHUB,Python,Yes,Jupyter notebook,No,SciPy stack on base tool.,No
