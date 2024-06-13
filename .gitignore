@@ -1,0 +1,12 @@
+*.pyc
+*~
+.DS_Store
+.idea
+.ipynb_checkpoints
+.sass-cache
+__pycache__
+_site
+.Rproj.user
+.jekyll-cache/
+
+_build/
