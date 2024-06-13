@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Assignment Management using GitHub Classroom &#8212; MolSSI ACT-CMS  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=b0aaeb25" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'faculty_fellows_workshop/classroom_code_management';</script>
+    <link rel="icon" href="../_static/molssi_square.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Computational Platforms for Programming Lessons" href="computational_platforms.html" />
+    <link rel="prev" title="Mangaing Software and Python Environments" href="python_environments.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="../_static/molssi_main_dark_act_cms.png" class="logo__image only-dark" alt=""/>
+    <script>document.write(`<img src="../_static/molssi_main_light_act_cms.png" class="logo__image only-light" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">MolSSI ACT-CMS</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    2024 Faculty Fellows Workshop Schedule
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-external" href="https://molssi.org">
+    MolSSI
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/act-cms/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/MolSSI_NSF" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    2024 Faculty Fellows Workshop Schedule
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-external" href="https://molssi.org">
+    MolSSI
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/act-cms/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/MolSSI_NSF" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">2024 Faculty Fellows Workshop Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_environments.html">Mangaing Software and Python Environments</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Assignment Management using GitHub Classroom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="computational_platforms.html">Computational Platforms for Programming Lessons</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">2024 Faculty Fellows Workshop Schedule</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Assignment...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="assignment-management-using-github-classroom">
+<h1>Assignment Management using GitHub Classroom<a class="headerlink" href="#assignment-management-using-github-classroom" title="Link to this heading">#</a></h1>
+<p>For classroom code management, we recommend using <a class="reference external" href="https://classroom.github.com/">GitHub Classroom</a>.
+GitHub Classroom is a tool that helps you manage and collect programming assignments.
+It integrates directly with GitHub and uses GitHub repositories for holding code assignments.
+Later in the lessons, we will discuss how different computational platforms can integrate with GitHub and GitHub Classroom.
+GitHub Classroom allows you to create an assignment, distribute it to students, and collect their work.
+It also provides you with a way to grade the assignments and provide feedback to students.</p>
+<p>This lesson will cover how to set up a GitHub Classroom including our recommendend method for creating organizations, how to create assignments, and how to access student work as well as provide feedback.</p>
+<div class="tip admonition">
+<p class="admonition-title">Prerequisites</p>
+<p>Before completing this tutorial, make sure you have <a class="reference external" href="https://www.github.com/signup">signed up for a GitHub account</a> and are logged in.</p>
+</div>
+<section id="github-classroom-the-student-s-perspective">
+<h2>GitHub Classroom - The Student’s Perspective<a class="headerlink" href="#github-classroom-the-student-s-perspective" title="Link to this heading">#</a></h2>
+<p>Before we dive into talking about the instructor’s view of a GitHub Classroom, it will first be helpful to get accquainted with the student’s perspective.
+After we understand what GitHub Classroom looks like to a student, we will talk about how to set it up as an instructor.
+When using GitHub Classroom, students will start assignments by clicking links that you provide.
+These links will create the student’s assignment under their GitHub username and the student will have a repository with the starting code and assignment instructions.</p>
+<section id="accepting-an-assignment">
+<h3>Accepting an Assignment<a class="headerlink" href="#accepting-an-assignment" title="Link to this heading">#</a></h3>
+<p>Students start assignments by clicking links that you provide.
+You can put these links on your learning management system, in an email, or on a website.
+When a student clicks the link, they will be asked to accept the assignment.</p>
+<p>You can start the sample assignment by clicking <a class="reference external" href="https://classroom.github.com/a/9EegT-Co">this link</a>.</p>
+<p>The first time you click an assignment link, you will be asked to authorize GitHub Classroom to access your account.
+After authorization, you will see a page very similar to the screenshot below:</p>
+<p><img alt="Accepting an Assignment" src="../_images/student_accept_assignment.png" /></p>
+<p>After accepting the assignment, you will have your own repository with the assignment starter code.
+This starter code is designed by you, the course instructor, to include the necessary files and structure for the assignment.
+It is also beneficial for the starter code to include a README file with instructions for the assignment.</p>
+</section>
+<section id="turning-in-work">
+<h3>Turning in work<a class="headerlink" href="#turning-in-work" title="Link to this heading">#</a></h3>
+<p>To complete the assignment, the student will need to make changes to the code in their repository.
+When they are ready to turn in their work, they will need to commit and push their changes to their repository.</p>
+<p>To get an idea of how this works, let’s make an edit to the README file in the repository you just created.</p>
+<p>Click the pencil icon in the upper right corner of the README file to edit the file.
+Add your name and the date to the file and then save the changes.</p>
+<p>In order to turn in work using GitHub Classroom, the student will need to modify the files that are in the repository on GitHub.
+In a later lesson, we will talk about how this can be done with some recommended computational platforms.
+For the sake of this example, we will keep our changes simple and edit the README file directly on GitHub.</p>
+</section>
+<section id="viewing-feedback">
+<h3>Viewing Feedback<a class="headerlink" href="#viewing-feedback" title="Link to this heading">#</a></h3>
+<p>This assignment has been set up to use Pull Request Feedback.
+This means that GitHub opens a Pull Request on the repository when the assignment is created so that instructors and students can easily see the changes that are made.
+Click the “Pull Requests” tab at the top of the repository to see the pull request.</p>
+<p>You will a screen similar to the one below:</p>
+<p><img alt="Viewing Feedback" src="../_images/pr-feedback-student.png" /></p>
+<p>This allows instructors to see all changes as they are made (a complete history of changes and when they are done is kept), and comment on the changes.</p>
+</section>
+</section>
+<section id="github-classroom-instructor-perspective">
+<h2>GitHub Classroom Instructor Perspective<a class="headerlink" href="#github-classroom-instructor-perspective" title="Link to this heading">#</a></h2>
+<p>Now that you’ve seen what GitHub Classroom looks like from the student’s perspective, let’s talk about how to set up a GitHub Classroom as an instructor.
+As an instructor, you will need to complete a few steps to set up a GitHub Classroom.
+After the Classroom is created, you can create assignments, distribute them to students, and collect their work.</p>
+<p>Creating a classroom requires you to</p>
+<ol class="arabic simple">
+<li><p>Create a GitHub Organization.</p></li>
+<li><p>Create a GitHub Classroom linked to your organization.</p></li>
+</ol>
+<p>Your GitHub organization will host all starting code for your assignments as well as your students’ repositories.</p>
+<section id="creating-a-github-organization">
+<h3>Creating a GitHub Organization<a class="headerlink" href="#creating-a-github-organization" title="Link to this heading">#</a></h3>
+<p>To create a GitHub Organization, click the dropdown menu in the upper right corner of the GitHub page and select “New organization” (see screenshot below):</p>
+<p><img alt="Creating a GitHub Organization" src="../_images/new_org.png" /></p>
+<p>You will be prompted for your organization plan type, choose the <strong>Free</strong> tier.
+As a verified educator, you will be able to upgrade your Organization to the Team plan for free.
+On the next page, enter the name of your organization and a description.
+Usually, you’ll want your organization to be named after your course.</p>
+<div class="tip admonition">
+<p class="admonition-title">Upgrade to GitHub Team</p>
+<p>If you are a verified educator, you can upgrade your organization to the Team plan for free.
+Note that this is not necessarily required, but will get you access to more features.
+Go to <a class="reference external" href="https://education.github.com/globalcampus/teacher">GitHub Education</a> and click the Green button that says “Upgrade to GitHub Team”.
+Choose your the organization you just created to upgrade.</p>
+</div>
+</section>
+<section id="creating-a-github-classroom">
+<h3>Creating a GitHub Classroom<a class="headerlink" href="#creating-a-github-classroom" title="Link to this heading">#</a></h3>
+<p>After your organization is created, you should create a GitHub Classroom.
+Go to <a class="reference external" href="https://classroom.github.com/">GitHub Classroom</a> and sign in.
+After signing in, click the green “New Classroom” button.
+On the next page, choose the organization you just created and give your classroom a name.</p>
+</section>
+<section id="creating-an-assignment">
+<h3>Creating an Assignment<a class="headerlink" href="#creating-an-assignment" title="Link to this heading">#</a></h3>
+<p>After your classroom is created, you can add assignments to the classroom.
+The first step in this will typically be creating the starting code or instructions for the assignment.
+You can create your starting code in a way that you’re used to preparing your starting code.
+If you need guidance on this, please see the previous lesson on using GitHub Desktop.
+You should then add this to a repository under your organization on GitHub.
+You can choose for this starting code to be either public or private.</p>
+<div class="tip admonition">
+<p class="admonition-title">Including Instructions</p>
+<p>It is recommended to include instructions for the assignment in the README.md file of the starting code repository.
+GitHub will display the README file to students when they accept the assignment.</p>
+</div>
+<p>After creating your starting code repository, you can add the assignment to your classroom.
+From the classroom page, click the green “New Assignment” button.</p>
+<p>You will see a series of pages that allow you to set up your assigment.</p>
+<p><img alt="Creating an Assignment" src="../_images/assignment-setup1.png" /></p>
+<p>On this page, you can give your assignment a title, set a deadline, and specify if it is a group or individual assignment. By setting a deadline and cut-off date, you can control when students can they work on an assignment. If you do not choose a cut-off date, students will be able to work on the assignment indefinitely. However, GitHub Classroom will mark the assignment as late if it is turned in after the deadline.</p>
+<p>On the next page, you can specify the repository that contains the starting code for the assignment.</p>
+<p><img alt="Creating an Assignment - 2" src="../_images/assignment-setup2.png" /></p>
+<p>You should choose the repository you created earlier as the starting code for the assignment.</p>
+<p>On the final page of assignment creation, <strong>make sure you choose to enable Pull Request Feedback</strong>.</p>
+<p>After you have created the assignment, you can distribute it to students by sharing the assignment link.
+The students will have a similar experience to that described in the student perspective section above.</p>
+</section>
+<section id="accessing-student-work">
+<h3>Accessing Student Work<a class="headerlink" href="#accessing-student-work" title="Link to this heading">#</a></h3>
+<p>After students have turned in their work, you can access it by going to the assignment page in GitHub Classroom.
+Click the assignment name to see all student repositories associated with the assignment.</p>
+<p><img alt="Assignments List" src="../_images/created_assignment.png" /></p>
+<p>From this page, you can click on a student’s repository to see their work.</p>
+<p><img alt="Student List" src="../_images/assignment_view_student_work.png" /></p>
+<p>Once a student has made any changes to their repository, you will see a green “submitted” badge next to their name.
+However, note that they will be able to continue making changes to their repository.
+If they make changes after the deadline, GitHub Classroom will mark the assignment as late using a yellow badge.</p>
+</section>
+<section id="providing-feedback">
+<h3>Providing Feedback<a class="headerlink" href="#providing-feedback" title="Link to this heading">#</a></h3>
+<p>Click the “Feedback” button on the student assignment to be taken to the Pull Request that was created when the assignment was accepted.
+From here, you can leave general comments on the assignment as well as comments on specific lines of code.</p>
+<p>To view specific changes the student has made on their code, click the “Files changed” tab.</p>
+<p><img alt="Feedback" src="../_images/feedback-loc.png" /></p>
+<p>From this tab, you can see all changes the student has made to their code and leave comments on specific lines.
+To leave a comment on a specific line of code or text that the student has added, click the “plus” sign that appears next to the line.</p>
+<p><img alt="Feedback" src="../_images/leaving-comment.png" /></p>
+<p>From here, you can either leave a single comment, or Start a Review.
+A Review will allow you to leave multiple comments on the code and then submit them all at once with an overall comment.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="python_environments.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Mangaing Software and Python Environments</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="computational_platforms.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Computational Platforms for Programming Lessons</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-classroom-the-student-s-perspective">GitHub Classroom - The Student’s Perspective</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accepting-an-assignment">Accepting an Assignment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-in-work">Turning in work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-feedback">Viewing Feedback</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-classroom-instructor-perspective">GitHub Classroom Instructor Perspective</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-github-organization">Creating a GitHub Organization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-github-classroom">Creating a GitHub Classroom</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-assignment">Creating an Assignment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-student-work">Accessing Student Work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#providing-feedback">Providing Feedback</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/faculty_fellows_workshop/classroom_code_management.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<div class="row h-10">
+    <div class="col-2">
+        <a href="https://molssi.org/" target="_blank" title="Go to MolSSI in a new tab">
+            <img src="../_static/molssi_main_logo.png" class="logo__image only-light footer_logo" alt="Logo image">
+            <img src="../_static/molssi_main_logo_inverted_white.png" class="logo__image only-dark footer_logo" alt="Logo image">
+        </a>
+    </div>
+    <div class="col-8">
+        <p> &copy; Copyright 2019-2023 <a href="https://molssi.org/">The Molecular Sciences Software Institute</a></p>
+        <p>Funded by the National Science Foundation 
+          <a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1547580">OAC-1547580</a> and 
+          <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2136142">CHE-2136142.</a></p>
+ 
+        
+        <p class="sphinx-version">
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br>
+        </p>
+        
+
+        <p class="theme-version">
+        Built with a customized <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
+        </p>
+
+    </div>
+    <div class="col-2">
+        <a href="https://nsf.gov/" target="_blank" title="Go to the NSF in a new tab">
+            <img src="../_static/nsf.png" class="footer_logo" alt="The NSF">
+          </a>
+    </div>
+</div></div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
