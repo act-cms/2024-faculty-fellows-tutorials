@@ -50,6 +50,7 @@ extensions = [
     'sphinx_design',
     'sphinx_copybutton',
     'myst_parser',
+    'sphinx_simplepdf', 
 ]
 
 myst_enable_extensions = ["colon_fence"]    

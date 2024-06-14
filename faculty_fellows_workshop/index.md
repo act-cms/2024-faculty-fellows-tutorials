@@ -50,4 +50,6 @@ self
 python_environments
 classroom_code_management
 computational_platforms
+github_copilot
 ```
+
