@@ -6,3 +6,4 @@ myst-parser
 sphinx-tags
 grip
 breathe
+sphinx-simplepdf
