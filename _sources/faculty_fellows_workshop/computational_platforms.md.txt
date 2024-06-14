@@ -2,6 +2,9 @@
 
 This lesson will cover open and free computational platforms where you might run your programming lessons. 
 
+Part of the Teaching Kit you will prepare as part of your fellowship will include instructions for other instructors on how to have students run your lessons. 
+Regardless of how you plan to deliver your lessons, you will need to consider how students will run the code you provide and to provide instructions for your material to be used on an open platform.
+
 ## Quick Start - Which platform should I use?
 
 The table below gives a comparison of the computational platforms that we will cover in this lesson.
@@ -19,7 +22,9 @@ The platforms are on the rows, the features are on the columns, and the cells co
 - **Available Languages**: The programming languages that are available on the platform.
 - **Customizable Environment**: The ability to install custom software on the platform.
 - **Interface/IDE**: The interface or integrated development environment (IDE) that the platform provides.
-
+- **Supports Collaborative Editing**: Provides the ability for multiple users to edit the same document at the same time in a way similar to Google Docs.
+- **Default Python Libraries**: The Python libraries that are pre-installed on the platform.
+- **GPU Support**: Whether the platform provides access to GPUs.
 
 ```{csv-table} Computational Platforms Comparison
 :header-rows: 1
