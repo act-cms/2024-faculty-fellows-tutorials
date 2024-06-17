@@ -14,3 +14,4 @@ numpy
 scikit-learn
 seaborn
 myst-nb
+statsmodels
