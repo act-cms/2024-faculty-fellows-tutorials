@@ -49,11 +49,11 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx_design',
     'sphinx_copybutton',
-    'myst_parser',
     'sphinx_simplepdf', 
+    'myst_nb',
 ]
 
-myst_enable_extensions = ["colon_fence"]    
+myst_enable_extensions = ["colon_fence", "dollarmath"]    
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -50,6 +50,7 @@ self
 python_environments
 classroom_code_management
 computational_platforms
+data_fitting
 github_copilot
 industrial_training
 ```

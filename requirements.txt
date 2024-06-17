@@ -7,3 +7,9 @@ sphinx-tags
 grip
 breathe
 sphinx-simplepdf
+pandas
+matplotlib
+scipy
+numpy
+scikit-learn
+seaborn

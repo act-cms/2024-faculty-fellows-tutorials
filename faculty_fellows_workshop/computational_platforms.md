@@ -5,6 +5,14 @@ This lesson will cover open and free computational platforms where you might run
 Part of the Teaching Kit you will prepare as part of your fellowship will include instructions for other instructors on how to have students run your lessons. 
 Regardless of how you plan to deliver your lessons, you will need to consider how students will run the code you provide and to provide instructions for your material to be used on an open platform.
 
+The first step for deciding your computational platform is to consider what the needs are for your lesson. 
+Some questions you might consider are:
+
+1. Do I need specialized software installed? 
+2. What programming language will I be using?
+3. Do I need access to specialized hardward like GPUs?
+4. Do I need students to be able to run the code collaboratively, with multiple users editing the same document at the same time?
+
 ## Quick Start - Which platform should I use?
 
 The table below gives a comparison of the computational platforms that we will cover in this lesson.

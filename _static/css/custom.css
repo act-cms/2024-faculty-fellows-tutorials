@@ -7,10 +7,6 @@ body, h1, h2, h3, h4, h5, h6 {
 	max-width: 100%;  /* default is 60em */
   }
 
-.bd-page-width {
-	max-width: 85%;  /* default is 88rem */
-}
-
 html[data-theme="light"] {
     --pst-color-primary: #ed1c24;
 	--pst-color-warning: #ed1c24;
@@ -84,10 +80,10 @@ img:not(.logo__image, .footer_logo) {
 	padding: 20px;
 }
 
-img.logo__image, img.footer_logo {
-    padding: 20px;
-    max-height: 150px
+.simpletable td, .simpletable th {
+    background-color: white;
 }
+
 
 
 table.border, .border table, .border caption, .border thead, .border tbody, .border th, .border td {
@@ -101,4 +97,3 @@ table.border, .border table, .border caption, .border thead, .border tbody, .bor
 	margin:-1rem;
 	position:fixed;
 	}
-
