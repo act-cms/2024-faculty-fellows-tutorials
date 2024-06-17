@@ -84,6 +84,9 @@ img:not(.logo__image, .footer_logo) {
     background-color: white;
 }
 
+.bd-page-width {
+	max-width: 85%;  /* default is 88rem */
+}
 
 
 table.border, .border table, .border caption, .border thead, .border tbody, .border th, .border td {
@@ -97,3 +100,7 @@ table.border, .border table, .border caption, .border thead, .border tbody, .bor
 	margin:-1rem;
 	position:fixed;
 	}
+
+img.logo__image, img.footer_logo {
+	max-height: 150px
+}
