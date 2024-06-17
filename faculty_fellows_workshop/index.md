@@ -1,4 +1,4 @@
-# 2024 Faculty Fellows Workshop Schedule
+# 2024 Faculty Fellows Workshop
 
 ## Day 1 - Monday, Jun 17, 2024
 ### Morning
